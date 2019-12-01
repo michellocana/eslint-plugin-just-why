@@ -1,0 +1,27 @@
+{
+  "name": "eslint-plugin-just-why",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michellocana/eslint-plugin-just-why.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michellocana/eslint-plugin-just-why/issues"
+  },
+  "homepage": "https://github.com/michellocana/eslint-plugin-just-why#readme",
+  "devDependencies": {
+    "prettier": "^1.19.1",
+    "prettier-eslint": "^9.0.1"
+  },
+  "dependencies": {
+    "eslint": "^6.7.2"
+  }
+}

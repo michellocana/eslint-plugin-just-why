@@ -1,4 +1,4 @@
-const { NO_TODO_COMMENT_ERROR_MESSAGE } = require('../messages')
+const { NO_TODO_COMMENT } = require('../messages')
 
 module.exports = {
   meta: {
@@ -20,7 +20,7 @@ module.exports = {
 
           if (isTodoComment) {
             context.report({
-              message: NO_TODO_COMMENT_ERROR_MESSAGE,
+              message: NO_TODO_COMMENT,
               loc: comment.loc
             })
           }

@@ -4,7 +4,7 @@ const ruleTester = new RuleTester()
 
 const NoTodoComment = require('../src/rules/NoTodoComment')
 
-const { NO_TODO_COMMENT_ERROR_MESSAGE } = require('../src/messages')
+const { NO_TODO_COMMENT } = require('../src/messages')
 
 ruleTester.run('no-todo-comment', NoTodoComment, {
   valid: [
@@ -25,11 +25,11 @@ ruleTester.run('no-todo-comment', NoTodoComment, {
   invalid: [
     {
       code: '// TODO foo',
-      errors: [{ message: NO_TODO_COMMENT_ERROR_MESSAGE }]
+      errors: [{ message: NO_TODO_COMMENT }]
     },
     {
       code: '// todo foo',
-      errors: [{ message: NO_TODO_COMMENT_ERROR_MESSAGE }]
+      errors: [{ message: NO_TODO_COMMENT }]
     }
   ]
 })

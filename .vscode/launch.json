@@ -10,6 +10,13 @@
       "name": "Debug NoTodoComment.test.js",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}\\tests\\NoTodoComment.test.js"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug NoIfElse.test.js",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}\\tests\\NoIfElse.test.js"
     }
   ]
 }

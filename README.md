@@ -10,3 +10,4 @@ I've created this plugin as a joke while learning the [ESLint API](https://eslin
 
 - no-todo-comment - Why set things to be done if we can do it now?
 - no-if-else - IOP (If Oriented Programming) is bad, ternary is the future.
+- no-literal-object - JSON.parse is faster, why don't you use it?

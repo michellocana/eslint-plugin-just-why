@@ -25,10 +25,33 @@ ruleTester.run('no-if-else', NoIfElse, {
   invalid: [
     {
       code: `
+        if (Math.random()) {
+          var foo = true
+          var bar = true
+        } else {
+          var baz = false
+        }
+      `,
+      errors: [{ message: NO_IF_ELSE }]
+    },
+    {
+      code: `
         if (true) {
           var foo = true
+          var bar = true
         } else {
-          var foo = false
+          var baz = false
+        }
+      `,
+      errors: [{ message: NO_IF_ELSE }]
+    },
+    {
+      code: `
+        if (foo) {
+          var bar = true
+          var baz = true
+        } else {
+          var qux = false
         }
       `,
       errors: [{ message: NO_IF_ELSE }]
